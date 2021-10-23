@@ -18,8 +18,7 @@ public class UserserviceApplication {
 	}
 
 	@Bean
-	CommandLineRunner run(UserService userService)
-	{
+	CommandLineRunner run(UserService userService) {
 		return args -> {
 			userService.saveRole(new Role(null, "ROLE_USER"));
 			userService.saveRole(new Role(null, "ROLE_MANAGER"));
@@ -35,9 +34,10 @@ public class UserserviceApplication {
 			userService.addRoleToUser("john", "ROLE_MANAGER");
 			userService.addRoleToUser("will", "ROLE_MANAGER");
 			userService.addRoleToUser("jim", "ROLE_ADMIN");
-			userService.addRoleToUser("arnold", "ROLE_SUPER_ADMIN");
-			userService.addRoleToUser("arnold", "ROLE_ADMIN");
-			userService.addRoleToUser("arnold", "ROLE_USER");
+			userService.addRoleToUser("sean", "ROLE_SUPER_ADMIN");
+			userService.addRoleToUser("sean", "ROLE_ADMIN");
+			userService.addRoleToUser("sean", "ROLE_USER");
 		};
 	}
+
 }

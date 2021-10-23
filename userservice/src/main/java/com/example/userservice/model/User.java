@@ -23,4 +23,5 @@ public class User implements Serializable {
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
     private Collection<Role> roles = new ArrayList<>();
+
 }
