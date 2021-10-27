@@ -1,5 +1,8 @@
 ## Security-Service API
 
+|Java|Spring Boot|MySQL|Maven|Postman|
+|---|---|---|---|---|
+
 ### This is a personal project.
 > Using this to build experience working with Spring Security.
 
